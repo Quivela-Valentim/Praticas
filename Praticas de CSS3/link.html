@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/apple-touch-icon.png" type="image/x-icon">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: monospace;
+            font-size: 2em;
+            font-weight: border;
+        }
+        a{
+            color: brown;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+            width: 600px;
+            height: 300px;
+        }
+        a:visited{
+            color:blanchedalmond;
+            width: 500px;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }                          
+        a:active{
+            color: orange;
+        }
+        #especial::after{
+            content:'⇐';
+            color: darkblue;
+        }
+        #especial::before{
+            content: '⇒';
+        }
+        #especial{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h2>Links Personalizados</h2>
+    <ul>
+        <li><a href="https://www.facebook.com/marketplace/?ref=bookmark&locale=fr_FR" target="_blank" rel="external" id="especial"> facebook</a></li>
+        <li><a href="https://www.instagram.com" target="_blank" rel="external"> instagram</a></li>
+        <li><a href="https://youtube.com/@antoniovalentim-c8m?si=56sSQZyz_pgiD0E3" target="_blank" rel="external">Meu canal do youtube </a></li>
+    </ul>
+</body>
+</html>

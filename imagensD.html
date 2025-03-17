@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/apple-touch-icon.png" type="image/x-icon">
+    <title>Imagens que se adaptam</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em outros dispositivos </p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/fotos/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/fotos/foto-m.png" type="image/png">
+        <img src="imagens/fotos/foto-g.png" alt="imagem g">
+    </picture>
+    <h1>Reproduzindo Áudios </h1>
+    <h2>Vem ouvir músicas que inspiram a alma </h2>
+    <p>2 Hearts - Patrick Patrikios.mp3</p>
+    <audio src="Áudios/2 Hearts - Patrick Patrikios.mp3" controls autoplay ></audio>
+    <p>End Of valor - Density & Time.mp3</p>
+    <audio src="Áudios/End Of Valor - Density & Time.mp3" controls autoplay></audio>
+    <p>Exploring - Jeremy Korpas.mp3</p>
+    <audio src="Áudios/Exploring - Jeremy Korpas.mp3" controls autoplay></audio> 
+    <h2>Outra maneira de fazer reproduzir um áudio no site </h2>
+    <audio preload="metadata" autoplay controls >
+        <source src="Áudios/2 Hearts - Patrick Patrikios.mp3" type="audio/mpeg">
+        <source src="Áudios/2 Hearts - Patrick Patrikios.ogg" type="audio/ogg">
+        <source src="Áudios/2 Hearts - Patrick Patrikios.wav" type="audio/wav">
+    </audio>
+</body>
+</html>
