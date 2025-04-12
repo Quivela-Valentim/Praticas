@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>As datas marcantes de António </h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="inome">nome do Autor:</label>
+            <input type="text" name="nome" id="inome" maxlength="30" required placeholder="Nome do Autor">
+        </p>
+        <p>
+            <label for="iidade">Idade do Autor</label>
+            <input type="number" name="idade" id="iidade" min="15" max="60" required placeholder="Idade do Autor" step="1">
+        </p>
+        <h2>A primeira namorada, a Data do inicio, a hora  e do término </h2>
+        
+        <p>
+            <label for="ipnamorada"> A primeira namorada</label>
+            <input type="text " name="pnamorada" id="ipnamorada" placeholder="primeira namorada" required maxlength="30">
+        </p>
+    
+        <p>
+            <label for="idata">Data do inicio</label>
+            <input type="date" name="data" id="idata" required value="2025-04-11" >
+        </p>
+    
+        <p>
+            <label for="ihora"> A hora do inicio</label>
+            <input type="time" name="hora" id="ihora" placeholder="hora do inicio do namoro" required value="00:00">
+        </p>
+        <p>
+            <label for="itermino"> Data do término</label>
+            <input type="date" name="termino" id="itermino" required value="2025-04-11">
+        </p>
+        <h2>A segunda namorada, a data do inicio, a hora e a data do termino</h2>
+
+        <p>
+            <label for="isnamorada"> A egunda namorada</label>
+            <input type="text" name="snamorada" id="isnamorada" required placeholder="segunda namorada" maxlength="30">
+        </p>
+    
+        <p>
+            <label for="idata2">A data do inicio </label>
+            <input type="date" name="data2" id="idata2" value="2025-04-11" required>
+        </p>
+        <p>
+            <label for="ihora2"> A hora do inicio</label>
+            <input type="time" name="hora2" id="ihora2" required placeholder="hora do começo" value="00:00">
+        </p>
+        <p>
+            <label for="itermino2"> A data do término</label>
+            <input type="date" name="termino2" id="itermino2" value="2025-04-11" required>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
