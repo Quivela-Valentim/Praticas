@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.java" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="iname">Nome </label>
+                <input type="text" name="name" id="iname" autocomplete="name" required placeholder="Nome do usuário">
+            </p>
+            <p>
+                <label for="idata"> Data de nascimeto</label>
+                <input type="date" name="data" id="idata" required autocomplete="date" value="2025-04-12">
+            </p>
+            
+                <input type="radio" name="sexo" id="imas" checked> <label for="imas">Masculino</label>
+                <input type="radio" name="sexo" id="ifem"> <label for="ifem">Feminino</label>
+            
+
+        </fieldset>
+        <fieldset>
+            <legend>Contactos e correios Electrónicos </legend>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" required autocomplete="tel" part="^\(\d{3}\)\d{3}-\d{3}-\{3}$" placeholder="(xxx)xxx-xxx-xxx"> 
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Quais Linguangens queres aprender ?
+            </legend>
+            <input type="checkbox" name="java" id="linjava"><label for="linjava">Java</label>
+            <input type="checkbox" name="php" id="linphp"> <label for="linphp">PHP</label>
+            <input type="checkbox" name="Sql" id="linSql"> <label for="linSql">SQL</label>
+            <input type="checkbox" name="JS" id="LinJS"> <label for="LinJS">Javascript</label>
+            <input type="checkbox" name="MySql" id="LinMysql"> <label for="LinMysql">MySQL</label>
+        </fieldset>
+        <!--Todos botões de radios têm de ter nesmo nome diferente de Checkbox-->
+        <p><input type="submit" value="enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
