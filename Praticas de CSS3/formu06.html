@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/apple-touch-icon.png" type="image/x-icon">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Uso de select, datalist, textarea </h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="ipro">Províncias:</label>
+            <select name="Províncias" id="ipro">
+                <optgroup label="Região Norte">
+                    <option value="BO">Bengo</option>
+                    <option value="CA">Cabinda</option>
+                    <option value="ZE">Zaire</option>
+                    <option value="UE">Uíge</option>
+                    <option value="LA">Luanda</option>
+                    <option value="ME">Malanje</option>
+                    <option value="LN">Lunda-Norte</option>
+                    <option value="KN">Kwanza-Norte</option>
+                    <option value="LS">Lunda-Sul</option>
+                </optgroup>
+                <optgroup label="Região centro">
+                    <option value="BE"> Bié</option>
+                    <option value="HO">Huambo</option>
+                    <option value="KS">Kwanza-sul</option>
+                    <option value="BA">Benguela</option>
+                    <option value="MO">Moxico</option>
+
+                </optgroup>
+                <optgroup label="Região">
+                    <option value="CE">Cunene</option>
+                    <option value="KK">Kuando-Kubango </option>
+                    <option value="HA">Huíla</option>
+                    <option value="NA">Namibe</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iCF">Comidas favoritas :</label>
+            <input type="text" name="cf" id="iCF" list="liscf">
+            <datalist id="liscf">
+                <option >Mufete</option>
+                <option >Funge com qualquer opção</option>
+                <option >Arroz com feijão</option>
+
+
+            </datalist>
+        </p>
+        <p>
+            <label for="itex">Digete a sua inquiétação</label> <br>
+            <textarea name="text" id="itex"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

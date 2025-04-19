@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.java" method="post">
+        <p>
+            <label for="inum">Em que ano você nasceu?</label>
+            <input type="number" name="num" id="inum" required max="2025" min="1900" oninput="calcIdade()"> 
+        </p>
+        <p>
+            <label for="idade">A minha será: </label>
+            <output id="idade" name="ano">0</output>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+    <script>
+        function calcIdade(){
+            let actual = new Date().getFullYear()
+            idade.innerHTML = Number(actual) - Number(inum.value)
+        }
+    </script>
+</body>
+</html>

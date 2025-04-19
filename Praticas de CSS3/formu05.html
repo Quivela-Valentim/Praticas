@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/apple-touch-icon.png" type="image/x-icon">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Uso de range, file color</h1>
+    <form action="cadastro.java" method="post">
+        <p>
+            <label for="icolor">Cor :</label>
+            <input type="color" name="color" id="icolor" value="#00fff0">
+        </p>
+        <p>
+            <label for="iran">Nìvel de satisfação</label>
+            <input type="range" name="nivel" id="iran" max="5" min="1" value="2">
+        </p>
+        <p>
+            <label for="idoc"> Certificado</label>
+            <input type="file" name="document" id="idoc" >
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    
+    </form>
+    
+</body>
+</html>
